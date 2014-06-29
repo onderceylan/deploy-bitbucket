@@ -1,0 +1,5 @@
+<?php
+
+require_once('/your/server/path/to/DeployBitbucket.class.php');
+
+$deployerClass  = new DeployBitbucket(realpath(basename(__FILE__, ".php") . '.config'));

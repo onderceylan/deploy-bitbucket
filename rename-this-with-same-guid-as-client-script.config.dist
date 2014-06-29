@@ -1,0 +1,37 @@
+{
+    "gitPath": "/usr/bin/git",
+    "sites": [
+        {
+            "name": "Production",
+            "remote": "origin",
+            "branch": "master",
+            "directory": "/var/www/your_production_site_folder",
+            "hasSubmodules": true,
+            "clearDirectoryOnDeploy": true,
+            "authorizedUsers": [
+                "bitbucketUserName1"
+            ]
+        },
+        {
+            "name": "Development",
+            "remote": "origin",
+            "branch": "dev",
+            "directory": "/var/www/your_development_site_folder",
+            "hasSubmodules": true,
+            "clearDirectoryOnDeploy": true,
+            "authorizedUsers": [
+                "bitbucketUserName1",
+                "bitbucketUserName2",
+                "bitbucketUserName3"
+            ]
+        }
+    ],
+    "logging": {
+        "enabled": true,
+        "logFilePath": "/var/log/deploy_your_repo_name.log",
+        "timezone": "Asia/Istanbul",
+        "dateFormat": "d-m-Y H:i:s",
+        "logPayloadData": true,
+        "logServerRequest": false
+    }
+}
