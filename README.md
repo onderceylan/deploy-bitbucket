@@ -31,7 +31,7 @@ Deploy Bitbucket uses PHP's exec() function to work properly. Although community
     * POST data must be sent with Bitbucket's user agent and must be in the right object format. It is not much reliable but better than nothing.
     * The only variable in POST data that is used in shell scripts is branch name. **The script deploys website if branch name matches any site configured in the configuration file.**
     * Script will deploy website if user who push to the repo is authorized to deploy that branch. So you can work with a team and **authorize selected users to deploy selected branches** in server.
-* Renaming client script which will be accessed from web by Bitbucket servers is suggested.
+* Renaming client script with a GUID is suggested.
 
 
 Installation
@@ -102,7 +102,7 @@ require_once('~/deploy-bitbucket/DeployBitbucket.class.php');
 ```
 Note that the deploy-bitbucket folder which contains deployer class is not have to be in a web accessible folder.
 ***
-#### 4. Configure Bitbucket account.
+#### 4. Configure your Bitbucket account.
 
 Browse your Bitbucket account, select your repo. On the settings page add a POST hook with your client script url.
 
