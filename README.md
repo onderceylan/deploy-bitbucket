@@ -1,11 +1,11 @@
 Deploy Bitbucket
 =========
 
-Deploy Bitbucket is a linux server side deployment script developed in PHP which deploys your projects right after you push to your Bitbucket repo.
+A linux server side deployment script developed in PHP which deploys your projects right after you push to your Bitbucket repo.
 
   - It is **not** for shared hosts.  
   - It is **based on Bitbucket's POST Hook Management** feature so you don't need to write custom bash scripts for git hooks.
-  - It's meant to be able to deploy multiple sites. So you can provide multiple branches to be deployed in multiple directories. **For example, you can configure script to deploy your *master* branch into production site and deploy *dev* branch into you development site.**
+  - It's meant to be able to deploy multiple sites. So you can provide multiple branches to be deployed in multiple directories. **For example, you can configure script to deploy your *master* branch into production site and deploy *dev* branch into your development site.**
   - Configuration file and client script make it possible to **use deployer class with multiple projects** on the same server.
 
 This project is based on BitBucket's POST Hook Management system. For those who haven't heard about it, I share a quote from [Bitbucket's POST Hook Management documentation] [1]:
